@@ -1,5 +1,7 @@
 # React horizontal scrolling menu
 
+This change makes some modifications to the original library.
+
 [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://war.ukraine.ua)
 
 ![example](/sample.gif)
@@ -177,25 +179,25 @@ Function callbacks also pass context, eg `onWheel`, `onScroll` etc.
 
 ## Properties and callbacks
 
-| Prop                     | Signature                                                |
-| ------------------------ | -------------------------------------------------------- |
-| LeftArrow                | React component for left arrow                           |
-| RightArrow               | React component for right arrow                          |
-| onWheel                  | (VisibilityContext, event) => void                       |
-| onScroll                 | (VisibilityContext, event) => void, will fire *before* scroll                       |
-| onInit                   | (VisibilityContext) => void                              |
-| apiRef                   | React.RefObject                                          |
-| onUpdate                 | (VisibilityContext) => void                              |
-| onMouseDown              | (VisibilityContext) => (React.MouseEventHandler) => void |
-| onMouseUp                | (VisibilityContext) => (React.MouseEventHandler) => void |
-| onMouseMove              | (VisibilityContext) => (React.MouseEventHandler) => void |
-| itemClassName            | ClassName of Item                                        |
-| separatorClassName       | ClassName of Item's separator                            |
-| scrollContainerClassName | ClassName of scrollContainer                             |
-| transitionDuration       | Duration of transitions in ms, default 500               |
-| transitionBehavior       | 'smooth' \|'auto' \| customFunction                      |
-| transitionEase           | Ease function, eg t => t\*(2-t)                          |
-| wrapperClassName         | ClassName of the outer-most div                          |
+| Prop                     | Signature                                                     |
+| ------------------------ | ------------------------------------------------------------- |
+| LeftArrow                | React component for left arrow                                |
+| RightArrow               | React component for right arrow                               |
+| onWheel                  | (VisibilityContext, event) => void                            |
+| onScroll                 | (VisibilityContext, event) => void, will fire _before_ scroll |
+| onInit                   | (VisibilityContext) => void                                   |
+| apiRef                   | React.RefObject                                               |
+| onUpdate                 | (VisibilityContext) => void                                   |
+| onMouseDown              | (VisibilityContext) => (React.MouseEventHandler) => void      |
+| onMouseUp                | (VisibilityContext) => (React.MouseEventHandler) => void      |
+| onMouseMove              | (VisibilityContext) => (React.MouseEventHandler) => void      |
+| itemClassName            | ClassName of Item                                             |
+| separatorClassName       | ClassName of Item's separator                                 |
+| scrollContainerClassName | ClassName of scrollContainer                                  |
+| transitionDuration       | Duration of transitions in ms, default 500                    |
+| transitionBehavior       | 'smooth' \|'auto' \| customFunction                           |
+| transitionEase           | Ease function, eg t => t\*(2-t)                               |
+| wrapperClassName         | ClassName of the outer-most div                               |
 
 ### VisibilityContext
 

@@ -13,9 +13,6 @@
     "type": "git",
     "url": "git+https://github.com/Preshonyee/react-horizontal-scrolling-menu.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@preshonyee"
-  },
   "exports": {
     ".": {
       "browser": "./dist/index.umd.js",
