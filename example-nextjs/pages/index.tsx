@@ -124,6 +124,7 @@ function App() {
         <div onMouseEnter={disableScroll} onMouseLeave={enableScroll}>
           <div onMouseLeave={dragStop}>
             <ScrollMenu
+              prefix={<h1>Hello</h1>}
               LeftArrow={LeftArrow}
               RightArrow={RightArrow}
               onInit={restorePosition}

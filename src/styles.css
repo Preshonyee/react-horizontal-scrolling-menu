@@ -1,5 +1,6 @@
 .react-horizontal-scrolling-menu--wrapper {
   display: flex;
+  flex-direction: column;
 }
 
 .react-horizontal-scrolling-menu--scroll-container {

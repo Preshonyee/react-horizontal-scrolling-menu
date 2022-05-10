@@ -25,6 +25,10 @@ import getItemsPos from './getItemsPos';
 
 type ArrowType = React.FC | React.ReactNode;
 export interface Props {
+  /*
+    component for the prefix
+  */
+  prefix?: React.ReactNode;
   /**
    Component for left arrow
 
@@ -146,6 +150,7 @@ function ScrollMenu({
   itemClassName = '',
   separatorClassName = '',
   wrapperClassName = '',
+  prefix,
   apiRef = { current: {} as publicApiType },
 }: Props): JSX.Element {
   const LeftArrow = getElementOrConstructor(_LeftArrow);
@@ -245,7 +250,24 @@ function ScrollMenu({
       onMouseMove={onMouseMove?.(context)}
     >
       <VisibilityContext.Provider value={context}>
-        {LeftArrow}
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}
+        >
+          {prefix}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+            }}
+          >
+            <div>{LeftArrow}</div>
+            <div> {RightArrow}</div>
+          </div>
+        </div>
         <ScrollContainer
           className={scrollContainerClassName}
           onScroll={scrollHandler}
@@ -259,7 +281,6 @@ function ScrollMenu({
             {children}
           </MenuItems>
         </ScrollContainer>
-        {RightArrow}
       </VisibilityContext.Provider>
     </div>
   );
