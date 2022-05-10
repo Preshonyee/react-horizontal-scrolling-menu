@@ -1,5 +1,5 @@
 {
-  "name": "react-horizontal-scrolling-menu",
+  "name": "@preshonyee/react-horizontal-scrolling-menu",
   "version": "2.7.2",
   "description": "Scrolling horizontal menu component for React, support mouse and touch devices.",
   "main": "dist/index.umd.js",
